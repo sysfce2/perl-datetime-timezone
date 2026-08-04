@@ -1,0 +1,3 @@
+# "IST" is Irish/India Standard Time in the generated zone modules.
+[default.extend-words]
+IST = "IST"
