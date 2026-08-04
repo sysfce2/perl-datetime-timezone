@@ -1,12 +1,12 @@
 exclude = [
     ".build/**/*",
-    "Dist-Zilla-PluginBundle-DROLSKY-*/**/*",
+    "DateTime-TimeZone-*/**/*",
+    "META.yml",
+    "MYMETA.yml",
     "blib/**/*",
     "lib/DateTime/TimeZone/Catalog.pm",
     "lib/DateTime/TimeZone/{Africa,America,Antarctica,Asia,Atlantic,Australia,Europe,Indian,Pacific}/**/*",
     "lib/DateTime/TimeZone/{CET,CST6CDT,EET,EST5EDT,EST,HST,MET,MST7MDT,MST,PST8PDT,WET}.pm",
-    "META.yml",
-    "MYMETA.yml",
     "t/00-*",
     "t/author-*",
     "t/release-*",
@@ -84,7 +84,7 @@ lint-failure-exit-codes = 1
 [commands.typos]
 type = "both"
 include = "**/*"
-exclude = [".stopwords", "lib/DateTime/TimeZone/Catalog.pm"]
+exclude = [".stopwords"]
 cmd = "typos"
 tidy_flags = "--write-changes"
 invoke = "once"
