@@ -82,10 +82,11 @@ ok-exit-codes = 0
 lint-failure-exit-codes = 1
 
 [commands.typos]
-type = "lint"
+type = "both"
 include = "**/*"
 exclude = [".stopwords", "lib/DateTime/TimeZone/Catalog.pm"]
 cmd = "typos"
+tidy_flags = "--write-changes"
 invoke = "once"
 ok-exit-codes = 0
 lint-failure-exit-codes = 2
